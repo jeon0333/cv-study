@@ -1,0 +1,4 @@
+# torch / torchvision은 실행 환경(CUDA, CPU, macOS)에 맞는 공식 설치 명령으로 설치하는 것을 권장합니다.
+# https://pytorch.org/get-started/locally/
+# Python 3.10+
+# pip install torch torchvision

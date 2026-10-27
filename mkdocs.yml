@@ -1,0 +1,99 @@
+site_name: CV 깊이 읽기
+site_description: 컴퓨터 비전 논문을 한국어로 이해하고 직접 구현하는 학습 사이트
+site_url: https://jeon0333.github.io/cv-study/
+repo_url: https://github.com/jeon0333/cv-study
+repo_name: jeon0333/cv-study
+edit_uri: edit/main/docs/
+docs_dir: docs
+site_dir: site
+exclude_docs: |
+  !/templates/
+copyright: '학습 노트 · 각 논문 저작권은 원 저자에게 있습니다.'
+theme:
+  name: material
+  language: ko
+  icon:
+    logo: material/book-open-page-variant
+  favicon: assets/favicon.svg
+  font:
+    text: Noto Sans KR
+    code: Roboto Mono
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: 다크 모드로 변경
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: indigo
+      accent: light-blue
+      toggle:
+        icon: material/brightness-4
+        name: 라이트 모드로 변경
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tabs.link
+    - toc.follow
+plugins:
+  - search:
+      lang: ko
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.snippets
+extra_css:
+  - stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - javascripts/progress.js
+  - javascripts/residual-demo.js
+nav:
+  - 홈: index.md
+  - 학습 시작:
+      - 학습 안내: guide.md
+      - 전체 로드맵: roadmap.md
+      - 학습 진행표: progress.md
+  - 기초 개념:
+      - CNN 한 장 이해하기: basics/cnn.md
+      - 최적화와 역전파: basics/optimization.md
+      - PyTorch 읽기: basics/pytorch.md
+  - '01 · ResNet':
+      - 이 단원의 목표: papers/resnet/index.md
+      - '1. 왜 깊기만 해서는 안 될까?': papers/resnet/01-problem.md
+      - '2. Residual Connection 이해하기': papers/resnet/02-residual.md
+      - '3. ResNet 구조 분석': papers/resnet/03-architecture.md
+      - '4. 논문 실험 읽기': papers/resnet/04-results.md
+      - '5. PyTorch 실습': papers/resnet/05-lab.md
+      - '6. 이해도 확인': papers/resnet/06-quiz.md
+      - '7. 정리와 확장': papers/resnet/07-review.md
+  - 실험 노트:
+      - 실험 기록법: experiments/index.md
+      - 첫 실험 계획: experiments/resnet-first-run.md
+  - 참고:
+      - 용어 사전: glossary.md
+      - 새로운 논문 추가하기: templates/add-a-paper.md
