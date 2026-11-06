@@ -33,3 +33,10 @@
 .md-typeset .reading-pill {font-size:.67rem;padding:.24rem .6rem;border-radius:99px;background:var(--md-code-bg-color);border:1px solid var(--md-default-fg-color--lightest);}
 .md-typeset img.study-diagram {width:100%;max-width:760px;display:block;margin:1.2rem auto;}
 @media (max-width:650px) { .md-typeset .study-hero {padding:1rem;} .md-typeset .study-card{padding:.9rem;} }
+
+.study-nav-toggle { display: none; }
+@media (min-width: 76.25em) {
+  .study-nav-toggle { display: block; padding: .4rem .65rem; margin-right: .4rem; color: inherit; font: inherit; font-size: .7rem; cursor: pointer; border: 1px solid currentColor; border-radius: .3rem; white-space: nowrap; }
+  .study-nav-toggle:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+  .study-nav-collapsed .md-sidebar--primary { display: none; }
+}

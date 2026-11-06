@@ -2,8 +2,10 @@
   <p class="study-eyebrow">COMPUTER VISION · PAPER TO PRACTICE</p>
   <h1>컴퓨터 비전, 이해하고 구현하기</h1>
   <p class="hero-lead">논문을 읽었다는 것과 이해했다는 것은 다릅니다. 여기서는 <strong>왜 이 문제가 생겼는지</strong>부터 살펴보고, 핵심 아이디어를 직접 설명하고, 코드를 실행하고, 결과를 비판적으로 읽습니다.</p>
-  <p><a class="md-button md-button--primary" href="papers/resnet/">첫 번째 수업: ResNet 시작하기</a> <a class="md-button" href="guide/">학습 방법 보기</a></p>
+  <p><a class="md-button md-button--primary" href="papers/densenet/">다음 수업 · DenseNet 시작하기</a> <a class="md-button" href="guide/">학습 방법 보기</a></p>
 </div>
+
+ResNet 학습을 완료했습니다. 다음 단원에서는 이전 특징을 이어 붙이는 DenseNet을 공부합니다.
 
 ## 어디서부터 읽으면 좋을까요?
 

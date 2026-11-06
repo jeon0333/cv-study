@@ -1,9 +1,9 @@
-# ResNet 학습 진행표
+# 학습 진행표
 
-브라우저에서 공부한 부분을 체크할 수 있습니다. 체크 상태는 **현재 브라우저의 로컬 저장 공간**에 보관되며, GitHub 계정이나 다른 기기와 자동으로 동기화되지는 않습니다.
+ResNet 학습 완료 후 DenseNet을 이어서 공부합니다. 브라우저에서 공부한 부분을 체크할 수 있습니다. 체크 상태는 **현재 브라우저의 로컬 저장 공간**에 보관되며, GitHub 계정이나 다른 기기와 자동으로 동기화되지는 않습니다.
 
 <div class="study-progress">
-  <strong data-progress-count>0 / 8 완료</strong> <span style="float:right" data-progress-percent>0%</span>
+  <strong data-progress-count>0 / 14 완료</strong> <span style="float:right" data-progress-percent>0%</span>
   <div class="progress-rail"><span class="progress-fill" role="progressbar" aria-label="학습 진도" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-progress-bar></span></div>
   <ul class="study-checklist">
     <li><label><input type="checkbox" data-study-check="cnn"> <span><a href="../basics/cnn/">CNN의 입력·출력과 합성곱</a>을 설명할 수 있다.</span></label></li>
@@ -27,3 +27,16 @@
 - `out += identity`를 실행하기 위한 shape 조건은 무엇일까요?
 
 [단원 전체 정리 보러 가기](papers/resnet/07-review.md)
+
+## DenseNet 확인 항목
+
+<ul class="study-checklist">
+  <li><label><input type="checkbox" data-study-check="densenet-concat"> 덧셈과 채널 이어 붙이기의 차이를 예제로 설명한다.</label></li>
+  <li><label><input type="checkbox" data-study-check="densenet-growth"> growth rate로 층 입력과 블록 출력 채널을 계산한다.</label></li>
+  <li><label><input type="checkbox" data-study-check="densenet-transition"> Bottleneck과 Transition의 역할을 구분한다.</label></li>
+  <li><label><input type="checkbox" data-study-check="densenet-results"> 논문 Table 2의 오류율과 파라미터 수를 해석한다.</label></li>
+  <li><label><input type="checkbox" data-study-check="densenet-lab"> 블록의 shape·특징 보존·역전파 검사를 통과했다.</label></li>
+  <li><label><input type="checkbox" data-study-check="densenet-quiz"> DenseNet 확인 문제를 풀고 내 말로 요약했다.</label></li>
+</ul>
+
+상단 진행률은 ResNet과 DenseNet의 전체 체크 항목을 합산합니다. [DenseNet 교재로 이동](papers/densenet/index.md)
